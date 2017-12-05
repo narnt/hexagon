@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(20, 7, 85);
+}
+
+svg {
+    position: absolute;
+    animation: rotate 3s infinite linear;
+}
+
+#inserthere {
+    position: relative;
+    margin: auto;
+    width: 550px;
+    height: 420px;
+    background-color: rgb(20, 7, 85);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,30 @@
+body
+    background-color: gold
+
+svg
+    position: absolute
+
+@for $i from 1 through 29
+    #inserthere:hover
+        svg:nth-child(#{$i})
+            polygon
+                animation: color 2s 0.1s*$i ease-out alternate
+
+#inserthere
+    position: relative
+    margin: auto
+    width: 550px
+    height: 420px
+    background-color: gold
+
+@keyframes rotate
+    100%
+        transform: rotate(360deg)
+
+@keyframes color
+    75%
+        stroke: black
+    80%
+        stroke: gray
+    100%
+        stroke: silver

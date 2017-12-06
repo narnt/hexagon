@@ -7,8 +7,9 @@ svg
 @for $i from 1 through 29
     #inserthere:hover
         svg:nth-child(#{$i})
+            animation: rotate 3s 0.1s*$i ease-out alternate
             polygon
-                animation: color 2s 0.1s*$i ease-out alternate
+                animation: color 3s 0.1s*$i ease-out alternate
 
 #inserthere
     position: relative
@@ -18,8 +19,10 @@ svg
     background-color: gold
 
 @keyframes rotate
+    75%
+        transform: rotate(0deg)
     100%
-        transform: rotate(360deg)
+        transform: rotate(60deg)
 
 @keyframes color
     75%

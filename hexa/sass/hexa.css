@@ -4,6 +4,9 @@ body {
 svg {
   position: absolute; }
 
+#inserthere:hover svg#poly {
+  display: none; }
+
 #inserthere:hover svg:nth-child(1) {
   animation: rotate 3s 0.1s ease-out alternate; }
   #inserthere:hover svg:nth-child(1) polygon {

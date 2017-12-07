@@ -52,3 +52,13 @@ function polygon(nodeId, deep) {
 
 
 polygon('#poly', true);
+document.getElementById('inserthere').addEventListener('mouseover', function(e) {
+    e.currentTarget.classList.add('anim');
+    console.log(e.currentTarget);
+})
+document.getElementById('inserthere').addEventListener('mouseout', function(e) {
+    setTimeout(() => {
+        document.getElementById('inserthere').classList.remove('anim');
+    }, 6000);
+    console.log(e.currentTarget);
+})

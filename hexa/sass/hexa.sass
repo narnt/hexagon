@@ -3,15 +3,15 @@ body
 
 svg
     position: absolute
-#inserthere:hover
+#inserthere
     svg#poly
         display: none
 @for $i from 1 through 29
-    #inserthere:hover
+    .anim
         svg:nth-child(#{$i})
-            animation: rotate 3s 0.1s*$i ease-out alternate
+            animation: rotate 2s 0.1s*$i ease-out alternate
             polygon
-                animation: color 3s 0.1s*$i ease-out alternate
+                animation: color 2s 0.1s*$i ease-out alternate
 
 #inserthere
     position: relative
@@ -30,6 +30,8 @@ svg
     75%
         stroke: black
     80%
-        stroke: gray
+        stroke: blue
+    90%
+        stroke: navy
     100%
-        stroke: silver
+        stroke: black
